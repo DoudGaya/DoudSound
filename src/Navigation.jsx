@@ -3,7 +3,7 @@ export const Navigation = () => {
         <>
         <div className="flex py-2 justify-center w-full ">
 
-            <div className=" py-4 flex w-full justify-between px-10">
+            <div className=" py-4 flex md:hidden w-full justify-between px-10">
                 <div className="">
                     LOGO
                 </div>

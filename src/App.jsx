@@ -20,13 +20,13 @@ function App() {
          </div>
         </button>
       </div>
-      <div className=" col-span-2 bg-[rgb(87,28,102)]/70 py-10 rounded-l-full px-10">
-        <p className=' text-4xl md:text-8xl font-black'> DoudSound</p>
+      <div className=" col-span-2 bg-[rgb(87,28,102)]/70 py-10 rounded-full md:rounded-none mx-6 md:rounded-l-full px-10">
+        <p className=' text-4xl md:text-8xl text-center font-black'> DoudSound</p>
       </div>
      </div>
 
-     <div className=" w-full justify-center py-10 flex text-center">
-     <p className=" text-4xl">Get Free Access to Millions of Musics Albums</p>
+     <div className=" w-full justify-center py-10 flex text-center px-4">
+     <p className=" text-3xl md:text-4xl">Get Free Access to Millions of Musics Albums</p>
      </div>
    </div>
    </div>
