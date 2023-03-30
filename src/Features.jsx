@@ -51,13 +51,13 @@ const features = [
 
 export default function Features() {
     return (
-        <div id='features' className=" md:h-[500px] bg-no-repeat bg-cover bg-center bg-fixed" style={{backgroundImage: `url(${banner2})`}}>
-        <div className="py-[100px] px-6 md:px-[200px]">
+        <div id='features' className=" md:h-[700px] bg-no-repeat bg-cover bg-center bg-fixed" style={{backgroundImage: `url(${banner2})`}}>
+        <div className="py-[100px] flex  flex-col space-y-16 px-6 md:px-[200px]">
     
-          <div className="">
+          <div className=" text-5xl">
               Features
             </div>
-            <div className=" flex flex-col md:flex-row justify-between  md:space-x-8  space-y-10 ">
+            <div className=" flex flex-col md:flex-row justify-between  md:space-x-8  space-y-10 md:space-y-0 ">
                 {singleSong}
             </div>
     

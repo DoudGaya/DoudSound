@@ -31,19 +31,19 @@ export const Navigation = () => {
                 <ul className=" flex space-x-10  ">
                     <li>
 
-                    <HashLink to="#about" className=" text-lg hover:underline">
+                    <HashLink smooth to="#about" className=" text-lg hover:underline">
                         About 
                     </HashLink>
 
                     </li>
                     <li>
-                    <HashLink to="#features" className=" text-lg hover:underline">
+                    <HashLink smooth to="#features" className=" text-lg hover:underline">
                         Features 
                     </HashLink>
                     </li>
                     <li>
-                    <HashLink to="#aboutme" className=" text-lg hover:underline">
-                        About 
+                    <HashLink smooth to="#abdulrahman" className=" text-lg hover:underline">
+                        About ME
                     </HashLink>
                     </li>
                 </ul>

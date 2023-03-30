@@ -2,6 +2,7 @@ import { useState } from 'react'
 import { Navigation } from './Navigation'
 import banner from './assets/banner.jpg'
 import About  from './About'
+import AboutMe from './AboutMe'
 import Features from './Features'
 
 
@@ -47,10 +48,9 @@ function App() {
         <p className=" text-3xl md:text-4xl">Get Free Access to Millions of Musics Albums</p>
      </div>
    </div>
- 
- 
     <About />
     <Features />
+    <AboutMe />
    </div>
    </>
   )

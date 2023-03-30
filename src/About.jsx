@@ -1,13 +1,15 @@
 import me from './assets/me2.jpg'
+import cat from './assets/cats.jpg'
 
 const About = () => {
     return (
         <div id='about' className="w-full grid  grid-cols-1 md:grid-cols-2  px-10 md:px-[200px] ">
         <div className="flex flex-col py-[60px] space-y-20 md:px-10 ">
          
-         <div className=" flex flex-col space-y-10 md:space-y-16 ">
+         <div className=" flex flex-col space-y-10  ">
             <p className=' text-4xl border-b pb-4'>About ME</p>
             <p className=' text-2xl'>My Name is <span className=' font-bold'>Abdulrahman Dauda Gaya</span>. This is my portfolio project for the ALX Software Engineering Program, I chose to create this music app because I'm inspired with the way spotify a changing the world of music. I love <span className=' text-emerald-400 font-bold'>Spotify</span> and Everything about it. So I've decided to make my own music app and add some more features to make it feel and look good</p>
+            <p>Again. I love Cats </p>
          </div>
 
          <div className=" flex flex-col">
@@ -35,9 +37,10 @@ const About = () => {
     
          </div>
         </div>
-        <div className=" md:py-20 py-6">
-          <div className=" w-full lg:px-20 flex items-center justify-center mx-auto h-full">
-            <img src={me} alt="Abdulrahman Dauda" className=' grayscale hover:grayscale-0 cursor-pointer rounded-lg' />
+        <div className=" md:py-20  py-6">
+          <div className=" w-full group  relative flex p-10 items-center justify-center mx-auto h-full">
+            <img src={cat} alt="Abdulrahman Dauda" className=' w-full h-full  grayscale group-hover:grayscale-0 cursor-pointer rounded-lg' />
+          <span className=' bg-[rgb(87,28,102)]/70 backdrop-blur-md cursor-pointer  px-6 py-2 rounded-lg text-xl absolute top-[70%] '>Touch Me</span>
           </div>
         </div>
        </div>
