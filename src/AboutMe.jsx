@@ -1,5 +1,4 @@
 import mine from './assets/mine.png'
-
 const AboutMe = () => {
     return (
         <>
@@ -8,7 +7,6 @@ const AboutMe = () => {
             <div className=" flex flex-col w-full justify-center">
                 <p className=' text-2xl md:text-3xl text-purple-200'>Frontend Engineer</p>
                 <p className=' text-3xl md:text-5xl'>Abdulrahman Dauda Gaya</p>
-
             </div>
         </div>
         </>
