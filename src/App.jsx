@@ -17,7 +17,7 @@ function App() {
   return (
    <>
    <div className=" text-white h-screen">
-   <div className=" h-full bg-center bg-gradient-to-br from bg-purple-900/30 to-blue-900/30" style={{backgroundImage: `url(${banner})`}} >
+   <div className=" h-full bg-center bg-no-repeat bg-gradient-to-br from bg-purple-900/30 to-blue-900/30" style={{backgroundImage: `url(${banner})`}} >
    <Navigation />
      <div className=" bg-[rgb(171,28,169)]/40 h-2/4 grid items-center grid-cols-1 justify-center md:grid-cols-3">
       <div className=" flex items-center justify-center">
