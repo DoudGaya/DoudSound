@@ -2,12 +2,12 @@
   "name": "doudsound",
   "private": true,
   "version": "0.0.0",
-  "homepage": "https://doudGaya.github.io/DoudSound",
+  "homepage": "https://doudgaya.github.io/doudsound",
   "type": "module",
   "scripts": {
     "dev": "vite",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
+    "deploy": "gh-pages -d dist",
     "build": "vite build",
     "preview": "vite preview"
   },
