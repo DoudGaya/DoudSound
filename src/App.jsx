@@ -93,7 +93,7 @@ function App() {
         </button>
       </div>
       <div className=" col-span-2  bg-gradient-to-r  from-[rgb(87,28,102)]/70 to-pink-500/70 py-10 rounded-full md:rounded-none mx-6 md:rounded-l-full md:px-10">
-        <p className='text-3xl sm:text-6xl md:text-6xl lg:text-8xl text-center font-black'>I love you Amera</p>
+        <p className='text-3xl sm:text-6xl md:text-6xl lg:text-8xl text-center font-black'>Meros</p>
       </div>
      </div>
 
