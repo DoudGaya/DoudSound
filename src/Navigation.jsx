@@ -1,4 +1,6 @@
 import { useState } from "react"
+import { HashLink } from "react-router-hash-link"
+import { Link } from "react-router-dom"
 
 
 export const Navigation = () => {
@@ -28,19 +30,21 @@ export const Navigation = () => {
                <div className="">
                 <ul className=" flex space-x-10  ">
                     <li>
-                        <a href="" className=" text-lg hover:underline">
-                            About 
-                        </a>
+
+                    <HashLink to="#about" className=" text-lg hover:underline">
+                        About 
+                    </HashLink>
+
                     </li>
                     <li>
-                        <a href="" className=" text-lg hover:underline">
-                            Play List
-                        </a>
+                    <HashLink to="#features" className=" text-lg hover:underline">
+                        Features 
+                    </HashLink>
                     </li>
                     <li>
-                        <a href="" className=" text-lg hover:underline">
-                            Album
-                        </a>
+                    <HashLink to="#aboutme" className=" text-lg hover:underline">
+                        About 
+                    </HashLink>
                     </li>
                 </ul>
                </div>
