@@ -2,7 +2,7 @@
   "name": "doudsound",
   "private": true,
   "version": "0.0.0",
-  "homepage": "https://{doudGaya}.github.io/{DoudSound}",
+  "homepage": "https://doudGaya.github.io/DoudSound",
   "type": "module",
   "scripts": {
     "dev": "vite",
