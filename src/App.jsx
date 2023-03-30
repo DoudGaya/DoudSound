@@ -103,17 +103,17 @@ function App() {
    </div>
  
  
-   <div className="w-full grid grid-cols-2 px-[200px] ">
-    <div className="flex flex-col py-[60px] space-y-20 px-10 ">
+   <div className="w-full grid  grid-cols-1 md:grid-cols-2 px-10 md:px-[200px] ">
+    <div className="flex flex-col py-[60px] space-y-20 md:px-10 ">
      
-     <div className=" flex flex-col space-y-16 ">
-        <p className=' text-4xl'>About ME</p>
+     <div className=" flex flex-col space-y-10 md:space-y-16 ">
+        <p className=' text-4xl border-b pb-4'>About ME</p>
         <p className=' text-2xl'>My Name is Abdulrahman Dauda Gaya and This is my portfolio project for the ALX Software Engineering Program</p>
      </div>
    
    
      <div className=" flex flex-col">
-      <div className=" flex flex-row justify-between bg-purple-400/30 py-4 rounded-2xl px-16">
+      <div className=" flex flex-row justify-between bg-purple-400/30 py-4 rounded-2xl px-6 md:px-16">
 
         <button className=' px-3'>
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class=" w-10 h-10 ">
@@ -137,16 +137,16 @@ function App() {
 
      </div>
     </div>
-    <div className="  py-20">
-      <div className=" w-1/2  mx-auto h-full">
+    <div className=" md:py-20 py-6">
+      <div className=" w-full md:w-1/2  mx-auto h-full">
         <img src={me} alt="Abdulrahman Dauda" className=' grayscale hover:grayscale-0 cursor-pointer rounded-lg' />
       </div>
     </div>
    </div>
 
 
-   <div className=" bg-pink-300 h-[500px] bg-no-repeat bg-cover bg-center bg-fixed" style={{backgroundImage: `url(${banner2})`}}>
-    <div className=" flex flex-row justify-between px-[200px] space-x-8 py-[100px]">
+   <div className=" md:h-[500px] bg-no-repeat bg-cover bg-center bg-fixed" style={{backgroundImage: `url(${banner2})`}}>
+    <div className=" flex flex-col md:flex-row justify-between md:px-[200px] md:space-x-8 px-6 space-y-10 py-[100px]">
         {singleSong}
     </div>
    </div>
