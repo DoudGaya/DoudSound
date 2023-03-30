@@ -7,33 +7,29 @@ import banner2 from './assets/banner2.jpg'
 import { useContext } from 'react'
 
 
-const musicLists = [
+const features = [
   {
     id: 1,
-    name: "Song Name",
-    genre: "Blues",
-    cover: ''
+    name: "Music Player with access to millions of songs globally",
+
   },
 
   {
-    id: 1,
-    name: "Song Name",
-    genre: "Soft ",
-    cover: ''
+    id: 2,
+    name: "Ability to search for audio and filter results ",
+
   },
 
   {
-    id: 1,
-    name: "Song Name",
-    genre: "Hip Hop",
-    cover: ''
+    id: 3,
+    name: "Ability to add song to favorite or save audio for feature use",
+
   },
 
   {
-    id: 1,
-    name: "Song Name",
-    genre: "Rogue",
-    cover: ''
+    id: 4,
+    name: "Ability to view filter song or album by artist or music title",
+
   }
 ]
 
@@ -41,15 +37,12 @@ const musicLists = [
 const Songs = ({song}) => {
   return (
     <>
-    <div className="bg-[rgb(171,28,169)]/40 rounded-2xl flex flex-col w-full">
-      <div className=" p-6 ">
-        <div className=" bg-black/40 rounded-2xl cursor-pointer max-w-max px-4 py-4">
-        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-20 hover:stroke-[rgb(255,181,254)]  h-20">
-            <path strokeLinecap="round" strokeLinejoin="round" d="M3.75 7.5l16.5-4.125M12 6.75c-2.708 0-5.363.224-7.948.655C2.999 7.58 2.25 8.507 2.25 9.574v9.176A2.25 2.25 0 004.5 21h15a2.25 2.25 0 002.25-2.25V9.574c0-1.067-.75-1.994-1.802-2.169A48.329 48.329 0 0012 6.75zm-1.683 6.443l-.005.005-.006-.005.006-.005.005.005zm-.005 2.127l-.005-.006.005-.005.005.005-.005.005zm-2.116-.006l-.005.006-.006-.006.005-.005.006.005zm-.005-2.116l-.006-.005.006-.005.005.005-.005.005zM9.255 10.5v.008h-.008V10.5h.008zm3.249 1.88l-.007.004-.003-.007.006-.003.004.006zm-1.38 5.126l-.003-.006.006-.004.004.007-.006.003zm.007-6.501l-.003.006-.007-.003.004-.007.006.004zm1.37 5.129l-.007-.004.004-.006.006.003-.004.007zm.504-1.877h-.008v-.007h.008v.007zM9.255 18v.008h-.008V18h.008zm-3.246-1.87l-.007.004L6 16.127l.006-.003.004.006zm1.366-5.119l-.004-.006.006-.004.004.007-.006.003zM7.38 17.5l-.003.006-.007-.003.004-.007.006.004zm-1.376-5.116L6 12.38l.003-.007.007.004-.004.007zm-.5 1.873h-.008v-.007h.008v.007zM17.25 12.75a.75.75 0 110-1.5.75.75 0 010 1.5zm0 4.5a.75.75 0 110-1.5.75.75 0 010 1.5z" />
-          </svg>
+    <div className="bg-stone-700/50  backdrop-blur-sm rounded-2xl flex  w-full">
+      <div className=" flex flex-col space-y-6 p-6 ">
+        <div className=" bg-black/40 text-3xl w-16 h-16 flex items-center justify-center rounded-2xl p-4 cursor-pointer ">
+          {song.id}
         </div>
         <p className=' text-lg font-bold'>{song.name}</p>
-        <p className=' text-lg'>{song.genre}</p>
       </div>
     </div>
     </>
@@ -57,7 +50,7 @@ const Songs = ({song}) => {
 }
 
 
-const singleSong = musicLists.map( song => <Songs key={song.id} song={song} />)
+const singleSong = features.map( song => <Songs key={song.id} song={song} />)
 
 
 function App() {
@@ -93,7 +86,7 @@ function App() {
         </button>
       </div>
       <div className=" col-span-2  bg-gradient-to-r  from-[rgb(87,28,102)]/70 to-pink-500/70 py-10 rounded-full md:rounded-none mx-6 md:rounded-l-full md:px-10">
-        <p className='text-3xl sm:text-6xl md:text-6xl lg:text-8xl text-center font-black'>Meros</p>
+        <p className='text-3xl sm:text-6xl md:text-6xl lg:text-8xl text-center font-black'>{ play? 'DoudSound' : 'Meros' }</p>
       </div>
      </div>
 
@@ -108,12 +101,12 @@ function App() {
      
      <div className=" flex flex-col space-y-10 md:space-y-16 ">
         <p className=' text-4xl border-b pb-4'>About ME</p>
-        <p className=' text-2xl'>My Name is Abdulrahman Dauda Gaya and This is my portfolio project for the ALX Software Engineering Program</p>
+        <p className=' text-2xl'>My Name is <span className=' font-bold'>Abdulrahman Dauda Gaya</span>. This is my portfolio project for the ALX Software Engineering Program, I chose to create this music app because I'm inspired with the way spotify a changing the world of music. I love <span className=' text-emerald-400 font-bold'>Spotify</span> and Everything about it. So I've decided to make my own music app and add some more features to make it feel and look good</p>
      </div>
    
    
      <div className=" flex flex-col">
-      <div className=" flex flex-row justify-between bg-purple-400/30 py-4 rounded-2xl px-6 md:px-16">
+      <div className=" flex flex-row justify-between border border-white py-4 rounded-2xl px-6 md:px-16">
 
         <button className=' px-3'>
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class=" w-10 h-10 ">
@@ -121,7 +114,7 @@ function App() {
           </svg>
         </button>
        
-        <button className=' w-20 h-20 bg-blue-400 flex items-center justify-center rounded-full'>
+        <button className=' w-20 h-20 border border-white flex items-center justify-center rounded-full'>
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className=" w-10 h-10 ">
             <path fillRule="evenodd" d="M4.5 5.653c0-1.426 1.529-2.33 2.779-1.643l11.54 6.348c1.295.712 1.295 2.573 0 3.285L7.28 19.991c-1.25.687-2.779-.217-2.779-1.643V5.653z" clipRule="evenodd" />
           </svg>
@@ -138,7 +131,7 @@ function App() {
      </div>
     </div>
     <div className=" md:py-20 py-6">
-      <div className=" w-full md:w-1/2  mx-auto h-full">
+      <div className=" w-full lg:px-20 flex items-center justify-center mx-auto h-full">
         <img src={me} alt="Abdulrahman Dauda" className=' grayscale hover:grayscale-0 cursor-pointer rounded-lg' />
       </div>
     </div>
@@ -146,9 +139,18 @@ function App() {
 
 
    <div className=" md:h-[500px] bg-no-repeat bg-cover bg-center bg-fixed" style={{backgroundImage: `url(${banner2})`}}>
-    <div className=" flex flex-col md:flex-row justify-between md:px-[200px] md:space-x-8 px-6 space-y-10 py-[100px]">
-        {singleSong}
-    </div>
+   
+   
+   <div className="py-[100px] px-6 md:px-[200px]">
+
+    <div className="">
+        Features
+      </div>
+      <div className=" flex flex-col md:flex-row justify-between  md:space-x-8  space-y-10 ">
+          {singleSong}
+      </div>
+
+   </div>
    </div>
    </div>
    </>
