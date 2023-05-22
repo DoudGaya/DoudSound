@@ -23,7 +23,7 @@ export const Navigation = () => {
             </div>
            <div className=" hidden w-[1200px] md:flex justify-between py-6 mx-auto ">
                <Link href="#" className="  text-xl font-bold">
-                    DoudSound
+                    Sound Music 
                </Link>
 
 
